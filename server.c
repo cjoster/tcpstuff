@@ -81,7 +81,7 @@ int main( int argc, const char *argv[], const char *envp[] )
 
 	while( 1 ) {
 		int ret;
-		size_t totsent;
+		off_t totsent;
 
 		FD_ZERO(&rfds); FD_ZERO(&wfds);
 		FD_SET(infd, &rfds);
