@@ -15,5 +15,5 @@
 On the same host:
 
 ```
-    nc localhost 4443 > /dev/null
+    nc localhost 4443 2>&1 | dd of=/dev/null status=progress
 ```    
