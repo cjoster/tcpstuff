@@ -123,7 +123,7 @@ int main( int argc, const char *argv[], const char *envp[] )
 			totsent = 0;
 
 			while( totsent < statbuf.st_size ) {
-				size_t sent = 0;
+				ssize_t sent = 0;
 
 				FD_ZERO(&wfds);
 				FD_SET(datasock, &wfds);
